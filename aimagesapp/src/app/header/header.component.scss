@@ -1,0 +1,17 @@
+nav{
+    height: 100%
+}
+
+.heading-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side-nav-button{
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba($color: #9b9b9bb8, $alpha: 0.2);
+        border-radius: 30%;
+    }
+}
