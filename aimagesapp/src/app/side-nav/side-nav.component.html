@@ -1,10 +1,12 @@
-<div class="side-nav-content border-white">
-    <ul class="nav-list">
+<div class="side-nav-content">
+    <ul class="nav-list" [ngClass]="sideNavStatus? 'nav-list-open': 'nav-list-shrink'">
         <li class="nav-list-item" *ngFor="let item of sideNavItems">
+            <a href="">
             <i class="{{item.icon}}"></i>
             <span>
-                <a href="">{{item.name}}</a>
+                {{item.name}}
             </span>
+        </a>
         </li>
         
     </ul>

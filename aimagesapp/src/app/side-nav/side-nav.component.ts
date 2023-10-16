@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent {
-
+@Input () sideNavStatus: boolean = false;
 sideNavItems = [
   {
     id: 0,
